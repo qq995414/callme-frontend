@@ -1,0 +1,329 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background: linear-gradient(135deg, #F2E9EB, #eedbdf);
+
+  color-scheme: light dark;
+  color: rgba(255, 2hsl(0, 0%, 14%), 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #F2E9EB, #eedbdf);
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.UserGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-auto-columns: 1fr;
+  place-items: center;
+  margin-top: 30px;
+  grid-row-gap: 10px;
+}
+
+.UserGrid>div {
+  height: 100%;
+}
+
+.UserGrid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-columns: 1fr;
+  place-items: center;
+  margin-top: 20px;
+  grid-row-gap: 10px;
+}
+
+.UserGrid2>div {
+  height: 100%;
+}
+
+.UserGrid3 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-columns: 1fr;
+  place-items: center;
+  margin-top: 20px;
+  grid-row-gap: 10px;
+}
+
+.UserGrid3>div {
+  height: 100%;
+}
+
+.UserGridJpg {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-auto-rows: 1fr;
+  grid-auto-columns: 1fr;
+  place-items: center;
+  width: 50%;
+  grid-row-gap: 10px;
+  grid-auto-flow: dense;
+  /* 新增這行屬性 */
+}
+
+.recommendContentGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  margin-top: 40px;
+  grid-row-gap: 10px;
+  gap: 20px;
+}
+
+.userMoney {
+  background-color: #D1B193;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.recommendType {
+  width: 33%;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #666666;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.recommendType-focus {
+  width: 33%;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #D1B193;
+  color: #D1B193;
+  text-align: center;
+}
+
+.input-area {
+  resize: none;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  border: 1px solid #D1B193;
+  width: 100%;
+  padding: 1rem 1rem 1rem 1rem;
+  color: #FFF;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: auto;
+  height: 60vh;
+  outline: none;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+.modal-close {
+  position: absolute;
+  top: -34px;
+  right: 0px;
+  font-size: 24px;
+  color: #D1B193;
+  cursor: pointer;
+}
+
+.modal-next {
+  position: absolute;
+  top: 49%;
+  left: -50px;
+  font-size: 24px;
+  color: #D1B193;
+  cursor: pointer;
+}
+
+.modal-back {
+  position: absolute;
+  top: 49%;
+  font-size: 24px;
+  right: -40px;
+  color: #D1B193;
+  cursor: pointer;
+}
+
+.mobile-none {
+  display: block;
+}
+
+.mobile-show {
+  display: none;
+}
+
+.mobile-container {
+  padding-left: 12rem;
+  padding-right: 12rem;
+}
+
+.user-container {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.owl-item {
+  margin-right: 0px !important;
+}
+
+.ReactModal__Content {
+  z-index: 999 !important;
+}
+
+.owl-carousel {
+  z-index: 0;
+}
+
+.userpt {
+  padding-top: 0px;
+}
+
+@media screen and (max-width: 1302px) {
+
+
+  .userpt {
+    padding-top: 5rem;
+  }
+
+  .modal-content {
+
+    width: 60vw;
+    height: auto;
+  }
+
+  .recommendContentGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .mobile-container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media screen and (max-width: 758px) {
+  .mobile-none {
+    display: none !important;
+  }
+
+  .UserGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .UserGrid2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .UserGrid3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  .gridHr {
+    border-top: 1px solid #666666;
+    padding-top: 1rem;
+
+  }
+
+  .modal-content {
+
+    width: 60vw;
+    height: auto;
+  }
+
+  .mobile-container {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  .mobile-padding {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .mobile-show {
+    display: block;
+  }
+
+  .user-container {
+    padding-top: 0px;
+    padding-bottom: 96px;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+@media screen and (max-width: 994px) {
+  .box {
+    margin: 20px auto;
+  }
+
+  .owl-carouse {
+    width: 90vw !important;
+  }
+}

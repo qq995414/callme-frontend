@@ -1,0 +1,263 @@
+@import 'swiper/css';
+@import 'swiper/css/effect-coverflow';
+@import 'swiper/css/pagination';
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  width: 99vw;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.header {
+  background-color: #4a4a4a;
+  color: white;
+  padding: 20px;
+}
+
+.user-list {
+  display: flex;
+  overflow-x: auto;
+  /* 允许横向滚动 */
+  white-space: nowrap;
+  /* 防止元素换行 */
+  padding: 10px 0;
+  scroll-behavior: smooth;
+  /* 平滑滚动效果 */
+}
+
+.user-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  width: 150px;
+  margin: 0 10px;
+  /* 使卡片之间有间距 */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  /* 使卡片不换行 */
+}
+
+.user-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.user-info {
+  margin-top: 10px;
+}
+
+.user-name {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.user-rating {
+  color: #ffa500;
+}
+
+.chat-button {
+  margin-top: 10px;
+  background-color: #28a745;
+  color: white;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.actions {
+  margin-top: 20px;
+}
+
+.more-button,
+.register-button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.more-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.register-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.user-list::-webkit-scrollbar {
+  height: 8px;
+}
+
+.user-list::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+/* 覆蓋 Modal 樣式 */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.login-modal-container {
+  text-align: center;
+}
+
+
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.input-field {
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.recaptcha-placeholder {
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.submit-button:hover {
+  background-color: #218838;
+}
+
+.social-login {
+  margin-top: 20px;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.google-login,
+.twitter-login {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.google-login {
+  color: #db4437;
+}
+
+.twitter-login {
+  color: #1da1f2;
+}
+
+.google-login:hover {
+  background-color: #f4f4f4;
+}
+
+.twitter-login:hover {
+  background-color: #eaf6fd;
+}
+
+.login-footer {
+  margin-top: 20px;
+}
+
+.login-footer a {
+  display: block;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}
+
+.login-modal-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-modal-button:hover {
+  background-color: #0056b3;
+}
+
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper1>.swiper-wrapper>.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 33% !important;
+}
+
+.swiper1>.swiper-wrapper>.swiper-slide img {
+  display: block;
+  width: 100%;
+}
